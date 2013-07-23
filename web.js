@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 app.use(express.logger());
 
-var inpbuf = fs.readFileSync(index.html);
+var inpbuf = fs.readFileSync('index.html');
 var instr = inpbuf.toString();
 
 app.get('/', function(request, response) {
