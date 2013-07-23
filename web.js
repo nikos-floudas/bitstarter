@@ -2,6 +2,8 @@ var express = require('express');
 var app = express();
 app.use(express.logger());
 
+require('fs');
+
 var inpbuf = fs.readFileSync('index.html');
 var instr = inpbuf.toString();
 
